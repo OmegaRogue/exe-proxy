@@ -11,7 +11,6 @@ import (
 var silent = false
 
 func main() {
-
 	name := os.Args[0]
 	args := os.Args[1:]
 	extPos := strings.LastIndex(name, ".")
