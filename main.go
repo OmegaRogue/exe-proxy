@@ -14,7 +14,7 @@ func main() {
 
 	name := os.Args[0]
 	args := os.Args[1:]
-	extPos := strings.LastIndex(name,".")
+	extPos := strings.LastIndex(name, ".")
 	var shortName string
 	var longName string
 	if extPos != -1 && extPos != 0 {
@@ -22,7 +22,6 @@ func main() {
 	} else {
 		shortName = name
 	}
-
 
 	if strings.HasSuffix(shortName, "_s") {
 		silent = true
